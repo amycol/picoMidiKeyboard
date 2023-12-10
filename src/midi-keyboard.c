@@ -11,7 +11,7 @@
 void main2();
 void notes_task();
 
-int values[4][8] = {{0, 0, 0, 0, 0, 0, 0, 0},{0, 0, 0, 0, 0, 0, 0, 0},{0, 0, 0, 0, 0, 0, 0, 0},{0, 0, 0, 0, 0, 0, 0, 0}};
+int values[4][8] = {0};
 int notes[32];
 int lastNotes[32];
 
@@ -57,7 +57,7 @@ void main2() {
     gpio_put(25, 1);
     int rows[] = {2, 3, 4, 5};
     int columns[] = {6, 7, 8, 9, 10, 11, 12, 13};
-    //int values[4][8] = {{0, 0, 0, 0, 0, 0, 0, 0},{0, 0, 0, 0, 0, 0, 0, 0},{0, 0, 0, 0, 0, 0, 0, 0},{0, 0, 0, 0, 0, 0, 0, 0}};
+    //int values[4][8] = {0};
     int i, j;
     for (i = 0; i < 8; i = i + 1) {
         gpio_init(columns[i]);
